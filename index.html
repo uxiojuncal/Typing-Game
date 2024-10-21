@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Mecanografía</h1>
+    <div id="header">
+        <p>Pon en práctica tu velocidad de tecleo con algunas citas de El Quijote.</p>
+        <p>Pulsa *START* para empezar</p>
+    </div>
+    <p id="quote"></p>
+    <div id="modal-dialog">
+        <p id="message"></p>
+        <button id="close">Cerrar</button>
+    </div>
+    <div id="input-container">
+        <input type="text" aria-label="current word" id="typed-value" readonly>
+        <button id="start">START</button>
+    </div>
+    <div id="high-scores">
+        <h3>Mejores Puntuaciones</h3>
+        <p id="no-scores-message">No hay puntuaciones todavía</p>
+        <ol id="high-scores-list"></ol>
+    </div>
+    <div id="overlay"></div>
+</body>
+</html>
